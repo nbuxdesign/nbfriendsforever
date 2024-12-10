@@ -25,10 +25,11 @@ section {
 .logosoup { display: flex;
 		    flex-direction: row;
 		    flex-wrap: wrap;
-		    justify-content: space-between;
+		    justify-content: flex-start;
 		    align-items: center;
-		    margin: 40px 0 0 0;
 	    }
+
+.logosoup img { margin: 40px 34px 14px 0; }
 
 /* navigation and active navigation UI (container) */
 .ui {
@@ -120,7 +121,7 @@ section {
 .text-section {
     width: 35%;
     background: #0E0A13;
-    padding: 100px 60px 0px 100px;
+    padding: 100px 60px 80px 100px;
     box-sizing: border-box;
 }
 
@@ -166,7 +167,7 @@ section {
     width: 55%;
     background: #0E0A13;
     box-sizing: border-box;
-    padding: 160px 8% 0 5%;
+    padding: 140px 8% 80px 5%;
 }
 
 .intro p {
