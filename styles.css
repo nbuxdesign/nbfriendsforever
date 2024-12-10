@@ -29,7 +29,7 @@ section {
 		    align-items: center;
 	    }
 
-.logosoup img { margin: 40px 34px 14px 0; }
+.logosoup img { margin: 32px 34px 14px 0; }
 
 /* navigation and active navigation UI (container) */
 .ui {
@@ -198,6 +198,11 @@ background-image: url('bg2.png');
 background-size: auto 100%;
 background-image: url('woodbg.jpg');
 }
+
+.background-intro img {	width:65%;
+						height: auto;
+					}
+
 .yellow{background-color: #fff;}
 .orange{background-color: #fff;}
 .blue{background-color: #fff;}
