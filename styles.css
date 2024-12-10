@@ -21,6 +21,15 @@ section {
 }
 
 
+/* logo soup */
+.logosoup { display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		    align-items: center;
+		    margin: 40px 0 0 0;
+	    }
+
 /* navigation and active navigation UI (container) */
 .ui {
     display: flex;
@@ -49,6 +58,7 @@ section {
     margin-right: 30px;
     height: 100%;
 }
+
 
 /* nav button styling */
 
@@ -160,7 +170,7 @@ section {
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 15px;
 }
