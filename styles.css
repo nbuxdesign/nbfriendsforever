@@ -151,7 +151,10 @@ section {
 			background-size: 100% auto;
 			}
 			
-.entry-mtv .entrylabel {background-image: url('./imgs/mtv-title.jpg');}
+.entry-mtv .entrylabel {background-image: url('./imgs/mtv-title.jpg');
+			  			background-size: 100% auto;
+			  			background-position: center;
+			  			}
 			
 .entry-mtv1 {background-color: #211538;}
 .entry-mtv1 .entrylabel {background-image: url('./imgs/mtv1-title.png');}
@@ -168,7 +171,7 @@ section {
 
 /* ENTRY CARDS */
 
-.entrycard {min-width: 300px;
+.entrycard {min-width: 120px;
 			background: #fff;
 			padding: 20px 34px;
 			margin: 34px;
@@ -277,6 +280,13 @@ background-image: url('bg2.png'); */
 					height: auto;
 				 }
 h1 {font-size: 1.4rem;}
-			 
+.entryrow {	width:100%;
+			height:50vh;
+		    display: flex;
+    		flex-direction: column;
+			align-items: center;
+		   }
+.entrylabel {min-height: 120px;
+			 width: 100%;} 
 }
 
