@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             root: null,
             rootMargin: '0px',
             // Lowering threshold so sections activate as soon as they're reasonably in view
-            threshold: 0.1
+            threshold: 0.2
         };
 
         observer = new IntersectionObserver((entries) => {
