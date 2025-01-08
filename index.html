@@ -10,20 +10,29 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Fixed Navigation -->
+  <!-- Navigation -->
   <div class="ui row">
-    <!-- Logo -->
-<a href="#section-intro" class="logo-link">
-  <img src="./imgs/nblogo.svg" height="32px" />
-</a>
-    <!-- Hamburger Icon (will be hidden on large screens, shown on small) -->
+    <a href="#section-intro" class="logo-link" id="logo-link">
+      <picture>
+        <source 
+          media="(max-width: 500px)"
+          srcset="./logos/nblogo-mobile.svg"
+          height="24px" 
+        />
+        <img 
+          srcset="./logos/nblogo.svg"
+          alt="Nick's Logo" 
+          height="32px" 
+        />
+      </picture>
+    </a>
+
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- Nav Links: wrapped around your existing .button items -->
     <div class="nav-links" id="nav-links">
       <div class="button" data-target="section-intro">About Me</div>
       <div class="button" data-target="section1">Background</div>
@@ -42,8 +51,8 @@
     <div class="text-section text-section-intro">
       <h1>Hey, I’m Nick 👋</h1>
       <h1>
-        I’m a Creative Product Designer and UX person with a 15 year history of
-        helping companies create engaging experiences on digital platforms.
+        I’m a Creative Product Designer and UX person with a 15 year history
+        of helping companies create engaging experiences on digital platforms.
       </h1>
       <p>
         I have a love for digital environments and am passionate about creating
@@ -154,7 +163,7 @@
         </li>
         <li>
           <b>UX Research &amp; Product Vision</b><br />
-          With so many users it was imperative that we understood our users
+          With so many users it was imperative that we understood our users’
           habits and developed an accurate portrait of the experience they
           needed. We engaged in deep analytic research and testing across the
           company to develop a product vision that the company could believe
@@ -162,7 +171,7 @@
         </li>
         <li>
           <b>The Stadium Design System</b><br />
-          Stadium is an advance design system built in Figma that allowed for
+          Stadium is an advanced design system built in Figma that allowed for
           the standardization of components in a fully responsive environment
           across device types. This system was integrated by the engineering
           teams and fostered seamless collaboration between design, product and
@@ -244,7 +253,7 @@
   <!-- Section 4: Case Study 2 -->
   <section id="section4" class="container container-study">
     <div class="study-section">
-      <!-- You can populate this section with more content if desired -->
+      <!-- (Add content here if desired) -->
     </div>
   </section>
 
@@ -281,11 +290,11 @@
       </ul>
     </div>
     <div class="image-section row">
-      <!-- Additional wrap-up imagery if desired -->
+      <!-- (Add wrap-up imagery here if desired) -->
     </div>
   </section>
 
-  <!-- Link to your main JavaScript -->
+  <!-- Scripts -->
   <script src="main.js"></script>
 </body>
 </html>

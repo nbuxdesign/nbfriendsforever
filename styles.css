@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: GazReg;
+  src: url('./fonts/gaz-reg.otf');
+}
+
+@font-face {
   font-family: ProxReg;
   src: url('./fonts/pn-reg.otf');
 }
@@ -13,14 +18,13 @@ body {
     font-family: ProxReg, sans-serif;
     color: white;
     background: #000;
-    scroll-behavior: smooth; /* Smooth scroll for anchor jumps */
+    scroll-behavior: smooth;
 }
 
 section {
-    /* scroll-margin-top: 63px; offset by the height of the nav if needed */
 }
 
-/* logo soup */
+ /* logo soup */
 .logosoup {
     display: flex;
     flex-direction: row;
@@ -39,20 +43,19 @@ section {
     height: 100%;
 }
 
-/* navigation and active navigation UI (container) */
+ /* navigation and active navigation UI (container) */
 .ui {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 4px 0 4px 80px;
-    /* background: rgba(0,0,0,0.6); */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    background: rgba(14, 10, 20, 0.6); /* no background initially */
-    transition: background 0.3s ease; /* smooth transition for background changes */
+    background: rgba(14, 10, 20, 0.6);
+    transition: background 0.3s ease, padding 0.3s ease;
 }
 
 .ui img {
@@ -60,40 +63,43 @@ section {
 }
 
 .uiactive {
-    background: rgba(14, 10, 20, 1); /* transition to full black */
+    background: rgba(14, 10, 20, 1);
+    padding: 10px 0 10px 80px;
 }
 
-/* nav button styling */
+ /* nav button styling */
 .button {
-    font: 0.9rem ProxReg, sans-serif;
+    font: 1rem ProxReg, Sans-Serif;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: #fff;
-    padding: 10px 12px;
+    padding: 10px 14px;
     border-radius: 20px;
     text-align: center;
-    margin: 2px;
+    margin: 6px;
     cursor: pointer;
-    transition: font-size 0.3s ease;
+    transition: font-size 0.3s ease, margin 0.3s ease;
 }
 
 .ui.buttonactive .button {
-  font-size: 0.8rem; /* smaller font for all other sections */
+  font-size: 0.8rem;
+  margin: 4px;
+  padding: 6px 10px;
 }
 
 .button:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Generic active styling */
+ /* Generic active styling */
 .button.active {
     background-color: #acacac;
     color: #000;
     border: 0;
 }
 
-/* Section-specific active styles */
+ /* Section-specific active styles */
 .button[data-target="section-intro"].active {
     background-color: #dfb150;
 }
@@ -116,7 +122,7 @@ section {
     background-color: #49bed7;
 }
 
-/* Each section is full viewport height */
+ /* Each section is full viewport height */
 .container {
     display: flex;
     flex-direction: row;
@@ -129,7 +135,7 @@ section {
     justify-content: flex-end;
 }
 
-/* ENTRY FORMATS */
+ /* ENTRY FORMATS */
 .entryrow {
     width: 100%;
     display: flex;
@@ -163,7 +169,7 @@ section {
     justify-content: flex-end;
 }
 
-/* entry styles */
+ /* entry styles */
 .entry-intro {
     justify-content: center;
     align-items: center;
@@ -211,7 +217,7 @@ section {
     background-repeat: no-repeat;
 }
 
-/* ENTRY CARDS */
+ /* ENTRY CARDS */
 .entrycard {
     max-width: 260px;
     background: #fff;
@@ -229,7 +235,7 @@ section {
     margin: 6px 0;
 }
 
-/* List Formats */
+ /* List Formats */
 ul {
     width: 80%;
     padding-left: 20px;
@@ -242,7 +248,7 @@ li {
     padding-bottom: 4px;
 }
 
-/* Text Sections Formats */
+ /* Text Sections Formats */
 .text-section {
     width: 560px;
     min-width: 560px;
@@ -294,7 +300,7 @@ p {
     color: #2a2a2a;
 }
 
-/* intro template */
+ /* intro template */
 .text-section-intro {
     width: 55%;
     box-sizing: border-box;
@@ -305,7 +311,7 @@ p {
     line-height: 1.7;
 }
 
-/* image entries */
+ /* image entries */
 .image-section {
     display: flex;
     flex-grow: 1;
@@ -317,12 +323,11 @@ p {
     flex-direction: column;
 }
 
-/* background-what placeholder */
+ /* background-what placeholder */
 .background-what {
-    /* example: background-image: url('bg2.png'); */
 }
 
-/* MEDIA QUERIES - 1370 and below */
+ /* MEDIA QUERIES - 1370 and below */
 @media screen and (max-width: 1370px) {
     .entry-br {
         padding: 5% 1% 2% 3%;
@@ -335,76 +340,63 @@ p {
     }
 }
 
-/* MEDIA QUERIES - 1280 and below */
+ /* MEDIA QUERIES - 1280 and below */
 @media screen and (max-width: 1281px) {
     .entry-br {
         padding: 5% 0 2% 2%;
     }
 }
 
-/* MEDIA QUERIES - 1780 and above */
+ /* MEDIA QUERIES - 1780 and above */
 @media screen and (min-width: 1780px) {
     .entry-br {
         padding: 2% 6% 6% 7%;
     }
 }
 
-/* ================================= */
-/* HAMBURGER & MOBILE NAV STYLES     */
-/* ================================= */
-
-
-/* Hidden on larger screens by default; only visible on small screens */
+ /* HAMBURGER & MOBILE NAV STYLES */
 .hamburger {
   display: none;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  margin-left: auto; /* pushes hamburger to the right if desired */
+  margin-left: auto;
 }
 
 .hamburger span {
   display: block;
   width: 32px;
   height: 3px;
-  margin: 4px 0;
+  margin: 3px 0;
   background-color: #fff;
   transition: all 0.3s ease;
 }
 
-/* Animate into an X when .hamburger has .open */
 .hamburger.open span:nth-child(1) {
-  transform: translateY(11px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
 .hamburger.open span:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
-/* The .nav-links container holds all your nav buttons */
 .nav-links {
-  display: flex; /* default for desktops */
+  display: flex;
   align-items: center;
 }
 
-/* A utility class to show/hide on mobile */
 .nav-links.show {
   display: flex;
   flex-direction: column; 
 }
 
-/* 
-   MEDIA QUERY: below 393px
-   Adjust if you prefer a different breakpoint (e.g., 450px, 768px, etc.)
-*/
 @media screen and (max-width: 540px) {
-  /* We hide the normal horizontal nav and show hamburger */
   .nav-links {
-    display: none; /* hide by default on small screens */
+    display: none;
     position: absolute;
-    top: 60px; /* just below your .ui row */
+    top: 60px;
     right: 0;
     background: rgba(14, 10, 20, 1);
     padding: 10px 20px;
@@ -413,29 +405,22 @@ p {
   .nav-links.show {
     display: flex;
     flex-direction: column;
-    width: 180px; /* or whatever you like */
+    width: 180px;
   }
 
   .hamburger {
-    display: flex; /* now visible on small screens */
-    margin-right: 16px;
+    display: flex;
   }
 
-  /* Possibly reduce top/side padding in .ui */
   .ui {
-    padding: 4px 8px;
+    padding: 12px 24px;
   }
 
-  /* Stack nav buttons vertically, or tweak as needed */
   .button {
     margin: 8px 0;
     width: 100%;
   }
 
-  /* 
-    Also consider re-styling sections, images, etc.
-    from the old @media (max-width: 450px) block
-  */
   .container {
     flex-direction: column;
   }
