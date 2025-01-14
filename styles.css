@@ -101,25 +101,25 @@ section {
 
  /* Section-specific active styles */
 .button[data-target="section-intro"].active {
-    background-color: #dfb150;
+    background-color: #eab545;
 }
 .button[data-target="section1"].active {
-    background-color: #dfb150;
+    background-color: #40cf78;
 }
 .button[data-target="section2"].active {
-    background-color: #dfb150;
+    background-color: #ef823f;
 }
 .button[data-target="section3"].active {
     background-color: #49bed7;
 }
 .button[data-target="section4"].active {
-    background-color: #40cf78;
+    background-color: #df3b3b;
 }
 .button[data-target="section5"].active {
-    background-color: #df3b71;
+    background-color: #dd4d7d;
 }
 .button[data-target="section6"].active {
-    background-color: #49bed7;
+    background-color: #eab545;
 }
 
  /* Each section is full viewport height */
@@ -131,8 +131,12 @@ section {
     box-sizing: border-box;
     align-items: stretch;
 }
-.container-study {
+.container-study-br {
     justify-content: flex-end;
+	background-image: url('./imgs/entry-br-background.jpg');
+    background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
  /* ENTRY FORMATS */
@@ -185,19 +189,11 @@ section {
     background-size: auto 100%;
     background-image: url('./imgs/background-br.jpg');
     padding: 3% 3% 3% 5%;
-}
+	justify-content: center;
+	align-items: center;
+	}
 
-.brleft {
-    flex: 1;
-    margin-right: 5%;
-}
-.brright {
-    flex: 2;
-}
-.brleft img,
-.brright img {
-    max-width: 100%;
-}
+.entry-br img { max-width: 94%; }
 
 .entry-mtv {
     background-image: url('./imgs/background-mtv.jpg');
@@ -253,7 +249,7 @@ li {
     width: 560px;
     min-width: 560px;
     background: #171020;
-    padding: 90px 60px 0 80px;
+    padding: 5% 3% 3% 5%;
     box-sizing: border-box;
     background-image: url('./imgs/bg-text.png');
     background-position: bottom;
@@ -264,7 +260,7 @@ li {
     width: 43%;
     min-width: 560px;
     background: #fff;
-    padding: 50px 70px 0 70px;
+    padding: 4% 4% 3% 4%;
     margin-right: 10%;
     box-sizing: border-box;
     color: #000;
@@ -285,9 +281,9 @@ h1 {
 
 h2 {
     font-family: Gaz;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    letter-spacing: 3%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1%;
     margin-bottom: 20px;
 }
 
@@ -304,7 +300,7 @@ p {
 .text-section-intro {
     width: 55%;
     box-sizing: border-box;
-    padding: 8% 8% 80px 5%;
+    padding: 9% 8% 80px 5%;
 }
 .text-section-intro p {
     font-size: 1.1rem;
