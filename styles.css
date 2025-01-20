@@ -48,13 +48,13 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 4px 0 4px 80px;
+    padding: 6px 0 6px 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
-    background: rgba(14, 10, 20, 0.8);
+    background: rgba(14, 10, 20, 0.9);
     transition: background 0.3s ease, padding 0.3s ease, height 0.3s ease;
 }
 
@@ -64,7 +64,7 @@ section {
 
 .uiactive {
     background: rgba(14, 10, 20, 1);
-    padding: 10px 0 10px 80px;
+    padding: 12px 0 12px 80px;
 }
 
  /* nav button styling */
@@ -73,7 +73,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255,255,255, 0.7);
     padding: 0 18px;
     height: 36px;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -113,10 +113,10 @@ section {
     background-color: #ef823f;
 }
 .button[data-target="section3"].active {
-    background-color: #49bed7;
+    background-color: #df3b3b;
 }
 .button[data-target="section4"].active {
-    background-color: #df3b3b;
+    background-color: #49bed7;
 }
 .button[data-target="section5"].active {
     background-color: #dd4d7d;
@@ -199,9 +199,8 @@ section {
 .entry-br {
     background-size: auto 100%;
     background-image: url('./imgs/background-br.jpg');
-    padding: 3% 3% 3% 5%;
-	justify-content: center;
-	align-items: center;
+    padding: 3% 3% 0 5%;
+    justify-content: center;
 	}
 
 .entry-br img { max-width: 94%; }
@@ -230,18 +229,20 @@ section {
     background: #fff;
     padding: 14px 20px;
     color: #000;
-    margin: 5% 4%;
 }
 .entrycard img {
     margin-bottom: 4px;
 }
 .entrycard p {
     font-family: ProxReg;
-    font-size: 0.7rem;
-    line-height: 1;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
     margin: 6px 0;
 }
 
+.placecard { margin-top: -12%;
+			 }
+			 
  /* List Formats */
 ul {
     width: 80%;
@@ -266,11 +267,14 @@ li {
     width: 560px;
     min-width: 560px;
     background: #171020;
-    padding: 5% 3% 3% 5%;
+    padding: 0 3% 0 5%;
     box-sizing: border-box;
     background-image: url('./imgs/bg-text.png');
     background-position: bottom;
     background-repeat: repeat-x;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .study-section {
@@ -278,8 +282,19 @@ li {
     min-width: 560px;
     background: #fff;
     box-sizing: border-box;
-    padding: 4% 4% 3% 4%;
+    padding: 2% 4% 0 4%;
     color: #000;
+	display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.study-section h2 {
+    font-family: Gaz;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 2%;
+    margin-bottom: 4px;
 }
 
 .container-study-br .study-section {margin-right: 10%;}
@@ -310,18 +325,22 @@ p {
     color: #2a2a2a;
 }
 
-span.tag {background-color: #df3b3b;
-	  	  padding: 4px 10px;
-	   	  color: #fff;
-	   	  font-size: 0.8rem;
-	   	  letter-spacing: 3%;
-	   	 }
+.tag span {	background-color: #df3b3b;
+	  	    padding: 4px 10px;
+	   	    color: #fff;
+	   	    font-size: 0.8rem;
+	   	    letter-spacing: 3%;
+	   	    flex-basis: fit-content;
+	   	  }
 	   
  /* intro template */
 .text-section-intro {
     width: 55%;
     box-sizing: border-box;
-    padding: 9% 8% 80px 5%;
+    padding: 0 8% 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .text-section-intro p {
     font-size: 1.1rem;
