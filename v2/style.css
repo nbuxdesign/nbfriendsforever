@@ -1,0 +1,220 @@
+@font-face {
+  font-family: Gaz;
+  src: url('./fonts/gaz-blk.otf');
+}
+
+@font-face {
+  font-family: GazReg;
+  src: url('./fonts/gaz-reg.otf');
+}
+
+@font-face {
+  font-family: ProxReg;
+  src: url('./fonts/pn-reg.otf');
+}
+
+body { color: #f5f5f0;
+   	   font-family: ProxReg, Sans-Serif;
+       line-height: 1.6rem;
+       font-size: 0.9rem;
+	   background-color: #0f0a15;
+	   padding: 0;
+	   margin: 0;
+	 }
+	  
+/* Flex Gunk */
+.flex {display: flex;}
+.row {flex-direction: row;}
+.column {flex-direction: column;}
+.center {align-items: center;}
+.justify{justify-content: center;}
+
+/* Navigation */
+.nav {padding: 10px 20px 10px 80px;
+	  background-color: rgba(15,10,21, 0.9);
+	  position: sticky;
+	  top: 0;
+	  left: 0;
+	  width: 100%;  
+	 }
+.nav img {margin-right: 32px;}
+
+.navbutton {padding: 4px 16px;
+		    color: #f5f5f0;
+			background-color: rgba(255,255,255,0.1);
+			font-family: ProxReg, Sans-Serif;
+			margin-right: 20px;
+			height: 24px;
+			border-radius: 12px;
+			}
+
+
+/* Header */
+
+.header {height: auto;}
+
+.headergraphic {flex-grow: 1;
+				background-image: url('./imgs/bg-wood.jpg');
+				}
+				
+.headerphoto { width: 100%;
+			   height: 100%;
+			   background-image: url('./imgs/selfie.png');
+			   background-repeat: no-repeat;
+			   background-position: center center;
+			   background-size: 70%;
+			   }
+				
+.headerintro { width: 55%; 
+		       background-color: #171020;
+		       }
+		       
+.introtext {padding: 12% 12% 13% 10%;}
+
+.logosoup {margin-top: 50px;}
+.logosoup p {letter-spacing: 2%;}
+
+
+.logosoupwrapper {  display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					align-items: center;
+					margin-top:30px;
+   				 }
+
+.logosoupwrapper img {margin:0 30px 30px 0;}
+
+
+/* Containers */
+
+.container-dark { background-color: #0f0a15;
+		  		  display: flex;
+		  		  flex-direction: row;
+		  		  padding: 5% 0;
+		  		}
+
+.container-light {background-color: #171020;
+		  		  display: flex;
+		  		  flex-direction: row;
+		  		  padding: 4% 0;
+		  		}
+
+/* Section Type 1 */
+
+	   
+.section-text {padding: 0 10% 0 15%;}
+
+.section-entry {width: 100%;}
+
+.section-entry-box-wrapper { height: 100%;
+							 justify-content: flex-start;
+							 align-items: center;
+							 display: flex;
+							 flex-direction: column;				  
+							}
+
+.section-entry-box { background-color: #fff;
+					  color: #000;
+					  width: 85%;
+					}
+					
+.section-entry-box-content {background-color: #A0A0A0;
+							height:540px;
+							}						
+.section-entry-box-label {padding: 4% 6%;
+						  color: #2a2a2a;
+						  }
+.section-entry-box-label p {margin: 0; line-height: 1.5rem;}
+.section-entry-box-label img {margin: 0 0 6px 0;}
+.section-bump {align-items: flex-start;}
+
+/* Section Type 2 */
+.section2-entry {width:50%;}
+.section2-text {padding: 0 15% 0 0;}
+.section2-entry-box { background-color: #fff;
+					  color: #000;
+					  width: 88%;
+					}
+.section2-entry-box-content {background-color: #A0A0A0;
+							height:460px;
+							}
+.section2-entry-box-label {padding: 2% 3%;
+						  color: #2a2a2a;
+						  }
+
+
+/* Entry Specific Style */
+
+.entryID-br {background-image: url('./imgs/entrybg-br.jpg');
+			 background-size: cover;
+			 }
+			 
+.entryID-dot { background-image: url('./imgs/entrybg-dot.jpg');
+			   background-size: cover;
+			 }
+
+
+/* Text Styles */
+
+p {font-family: ProxReg, Sans-Serif;
+   line-height: 1.6rem;
+   }
+   
+h1 {
+	color: #f5f5f0;
+    font-family: Gaz;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 2%;
+    margin-bottom: 20px;
+    margin-top: 0;
+} 
+
+h2 {
+	color: #f5f5f0;
+    font-family: Gaz;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1%;
+    margin-bottom: 20px;
+}
+
+/* List Style */
+
+ul {list-style-type:none;
+	padding: 0;
+	color: #f5f5f0;
+	}
+	
+li {margin: 6px 0 10px 0;}
+
+
+/* mobile changes */
+
+@media screen and (max-width: 540px) {
+
+
+  /* Nav */
+  .nav {width: auto;}
+
+  /* header */
+  .header {flex-direction: column;
+  		   height: auto;
+  		   }
+  .headerintro {width:100%;}
+  .headergraphic {height: 360px;}
+  .headerphoto {background-size: 74%;}
+  .introtext {padding: 6% 6% 4% 6%;}
+  
+  /* Containers */
+  .container-dark {flex-direction: column;}
+  
+  /* Section Style */
+  .section-text {padding: 6%;}
+  .section-entry-box {height:auto; width: 92%;}
+  .section-entry-box-content {height:416px;}
+  .section-entry {margin-bottom: 30px;}
+  .section-bump {align-items: center;}
+  
+  }
